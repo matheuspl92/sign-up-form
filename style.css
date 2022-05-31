@@ -72,6 +72,9 @@ a {
     --background-color-secondary: linear-gradient(90deg,#11141d, #2a2a2a);
     --button-color-primary: #fff;
     --button-color-secondary: #eaeaea;
+	--input-color-default: #eaeaea;
+	--input-color-focus: #5997ff;
+	--input-color-error: #ff5454;
 }
 
 @font-face {
@@ -195,4 +198,18 @@ button:active {
 
 p {
   max-width: 50ch;
+}
+
+input {
+	font-size: var(--font-size-small);
+	width: 27ch;
+	height: 1.5em;
+	border: 2px solid var(--input-color-default);
+	border-radius: 10px;
+	padding: 0 10px;
+}
+
+input:focus {
+	outline: 2px solid var(--input-color-focus);
+	box-shadow: 0px 0px 10px white;
 }
