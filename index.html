@@ -22,7 +22,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div class="main-middle">
-            <form action="###" method="post">
+            <form id="account-form" action="###" method="post">
                 <fieldset>
                     <legend>Complete your account information</legend>
                     <div class="input-container">
@@ -37,19 +37,19 @@
                             <input type="email" id="email" required></div>
                         <div>
                             <label for="phone">PHONE NUMBER</label>
-                            <input type="text"></div>
+                            <input type="text" id="phone" required></div>
                         <div>
                             <label for="pwd1">PASSWORD</label>
                             <input type="password" id="pwd1" required></div>
                         <div>
                             <label for="pwd2">CONFIRM PASSWORD</label>
-                            <input type="password"></div>
+                            <input type="password" id="pwd2" required></div>
                     </div>
                 </fieldset>
             </form>
         </div>
         <div class="main-bottom">
-            <button type="submit">Create Account</button>
+            <button type="submit" form="account-form">Create Account</button>
             <p>Already have an account? <a href="http://">Log in</a></p>
         </div>
     </div>
