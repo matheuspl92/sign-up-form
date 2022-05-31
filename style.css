@@ -213,3 +213,7 @@ input:focus {
 	outline: 2px solid var(--input-color-focus);
 	box-shadow: 0px 0px 10px white;
 }
+
+.error {
+	border: 2px solid var(--input-color-error);
+}
